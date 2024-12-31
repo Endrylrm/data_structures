@@ -167,6 +167,20 @@ func NewLinkedList() *LinkedList {
 	return &LinkedList{nil, 0}
 }
 
+func (ll *LinkedList) Reverse() {
+	var prevNode, nextNode *Node
+	curNode := ll.head
+
+	for curNode != nil {
+		nextNode = curNode.next
+		curNode.next = prevNode
+		prevNode = curNode
+		curNode = nextNode
+	}
+
+	ll.head = prevNode
+}
+
 func (ll *LinkedList) Search(value int) bool {
 	curNode := ll.head
 

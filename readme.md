@@ -13,3 +13,4 @@ Currently the implementation supports the following:
 - Clearing is O(N).
 - Checking if it's a valid position O(N).
 - Transforming the data in a String or Array, both being O(N).
+- Reverse is O(N).

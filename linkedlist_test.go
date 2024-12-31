@@ -172,3 +172,15 @@ func TestDeleteAtMiddle(t *testing.T) {
 		t.Fatalf("unable to delete node from the LinkedList")
 	}
 }
+
+func TestReverseLinkedList(t *testing.T) {
+	linkedList := NewLinkedList()
+	linkedList.InsertNode(1)
+	linkedList.InsertNode(3)
+	linkedList.InsertNodeAtMiddle(9)
+	linkedList.Reverse()
+
+	if linkedList.ToString() != "3, 9, 1" || linkedList.size != 3 {
+		t.Fatalf("unable to reverse LinkedList")
+	}
+}

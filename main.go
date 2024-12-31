@@ -17,6 +17,8 @@ func main() {
 	head.DeleteNodeByValue(5)
 	head.DeleteNodeAtPosition(2)
 	head.DeleteNode()
+	head.DeleteNodeAtMiddle()
+	head.Reverse()
 	head.ListAll()
 	arr := head.ToArray()
 	value, err := head.SearchByPosition(1)
