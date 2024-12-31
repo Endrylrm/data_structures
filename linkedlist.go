@@ -25,6 +25,11 @@ func (ll *LinkedList) CheckValidPosition(index int) bool {
 	return true
 }
 
+func (ll *LinkedList) Clear() {
+	ll.head = nil
+	ll.size = 0
+}
+
 func (ll *LinkedList) DeleteFirstNode() {
 	ll.head = ll.head.next
 	ll.size--
