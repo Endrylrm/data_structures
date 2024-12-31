@@ -157,6 +157,6 @@ func TestClearLinkedList(t *testing.T) {
 	linkedList.Clear()
 
 	if linkedList.size != 0 || linkedList.head != nil {
-		t.Fatalf("unable to convert the LinkedList to array")
+		t.Fatalf("unable to clear the LinkedList")
 	}
 }

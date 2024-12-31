@@ -26,8 +26,13 @@ func (ll *LinkedList) CheckValidPosition(index int) bool {
 }
 
 func (ll *LinkedList) Clear() {
-	ll.head = nil
-	ll.size = 0
+	for ll.head != nil {
+		temp := ll.head.next
+		ll.head = nil
+		ll.head = temp
+		ll.size--
+		fmt.Println(ll.head)
+	}
 }
 
 func (ll *LinkedList) DeleteFirstNode() {
