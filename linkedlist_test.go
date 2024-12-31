@@ -160,3 +160,15 @@ func TestClearLinkedList(t *testing.T) {
 		t.Fatalf("unable to clear the LinkedList")
 	}
 }
+
+func TestDeleteAtMiddle(t *testing.T) {
+	linkedList := NewLinkedList()
+	linkedList.InsertNode(1)
+	linkedList.InsertNode(3)
+	linkedList.InsertNodeAtMiddle(9)
+	linkedList.DeleteNodeAtMiddle()
+
+	if linkedList.ToString() != "1, 3" || linkedList.size != 2 {
+		t.Fatalf("unable to delete node from the LinkedList")
+	}
+}

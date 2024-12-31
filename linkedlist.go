@@ -31,7 +31,6 @@ func (ll *LinkedList) Clear() {
 		ll.head = nil
 		ll.head = temp
 		ll.size--
-		fmt.Println(ll.head)
 	}
 }
 
@@ -56,6 +55,10 @@ func (ll *LinkedList) DeleteNode() {
 
 	curHead.next = nil
 	ll.size--
+}
+
+func (ll *LinkedList) DeleteNodeAtMiddle() {
+	ll.DeleteNodeAtPosition(ll.size / 2)
 }
 
 func (ll *LinkedList) DeleteNodeAtPosition(index int) {
