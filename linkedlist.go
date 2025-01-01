@@ -221,24 +221,11 @@ func (ll *LinkedList) Sum() int {
 	return sum
 }
 
-func (ll *LinkedList) ListAll() {
-	curNode := ll.head
-	var curDataList []string
-
-	for curNode != nil {
-		curDataList = append(curDataList, strconv.Itoa(curNode.data))
-		curNode = curNode.next
-	}
-
-	curDataString := strings.Join(curDataList, ", ")
-	defer clear(curDataList)
-
-	fmt.Println(curDataString)
-}
-
 func (ll *LinkedList) ToString() string {
 	curNode := ll.head
 	var dataList []string
+
+	defer clear(dataList)
 
 	for curNode != nil {
 		dataList = append(dataList, strconv.Itoa(curNode.data))
@@ -246,7 +233,6 @@ func (ll *LinkedList) ToString() string {
 	}
 
 	allDataString := strings.Join(dataList, ", ")
-	defer clear(dataList)
 
 	return allDataString
 }
