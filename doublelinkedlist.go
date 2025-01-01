@@ -42,13 +42,17 @@ func (dll *DoublyLinkedList) Clear() {
 func (dll *DoublyLinkedList) DeleteFirstNode() {
 	dll.head = dll.head.next
 	dll.head.prev = nil
+
+	if dll.head == nil {
+		dll.tail = nil
+	}
+
 	dll.size--
 }
 
 func (dll *DoublyLinkedList) DeleteNode() {
 	if dll.size == 1 && dll.head != nil {
 		dll.DeleteFirstNode()
-		dll.tail = nil
 		return
 	}
 
