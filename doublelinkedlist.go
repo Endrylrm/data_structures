@@ -178,22 +178,14 @@ func NewDoublyLinkedList() *DoublyLinkedList {
 }
 
 func (dll *DoublyLinkedList) Reverse() {
-	var prevNode, nextNode *DoublyNode
-	var tempList *DoublyNode
 	curNode := dll.head
 
 	for curNode != nil {
-		temp := curNode.next
-		prevNode = curNode.prev
-		nextNode = curNode.next
-		tempList = curNode
-		tempList.next = prevNode
-		tempList.prev = nextNode
-		curNode = temp
+		curNode.next, curNode.prev = curNode.prev, curNode.next
+		curNode = curNode.prev
 	}
 
-	dll.tail = dll.head
-	dll.head = tempList
+	dll.head, dll.tail = dll.tail, dll.head
 }
 
 func (dll *DoublyLinkedList) Search(value int) bool {

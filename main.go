@@ -16,7 +16,7 @@ func main() {
 	head.DeleteNodeAtPosition(2)
 	head.DeleteNode()
 	head.DeleteNodeAtMiddle()
-	//head.Reverse()
+	head.Reverse()
 	fmt.Println(head.ToString())
 	fmt.Println(head.ToStringReverse())
 	arr := head.ToArray()
