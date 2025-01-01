@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestInsertNodeAtDoublyLinkedList(t *testing.T) {
+func TestInsertNodeInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 
@@ -13,7 +13,7 @@ func TestInsertNodeAtDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestInsertAtFirstOnDoublyLinkedList(t *testing.T) {
+func TestInsertAtFirstInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNodeAtFirst(3)
@@ -23,7 +23,7 @@ func TestInsertAtFirstOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestInsertAtMiddleOnDoublyLinkedList(t *testing.T) {
+func TestInsertAtMiddleInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -34,7 +34,7 @@ func TestInsertAtMiddleOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestInsertAtPositionOnDoublyLinkedList(t *testing.T) {
+func TestInsertAtPositionInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -46,7 +46,7 @@ func TestInsertAtPositionOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestDeleteNodeOnDoublyLinkedList(t *testing.T) {
+func TestDeleteNodeInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -59,7 +59,7 @@ func TestDeleteNodeOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestDeleteAtPositionOnDoublyLinkedList(t *testing.T) {
+func TestDeleteAtPositionInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -72,7 +72,7 @@ func TestDeleteAtPositionOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestDeleteFirstOnDoublyLinkedList(t *testing.T) {
+func TestDeleteFirstInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -85,7 +85,7 @@ func TestDeleteFirstOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestDeleteByValueOnDoublyLinkedList(t *testing.T) {
+func TestDeleteByValueInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -98,7 +98,7 @@ func TestDeleteByValueOnDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestSearchAtDoublyLinkedList(t *testing.T) {
+func TestSearchInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -110,7 +110,7 @@ func TestSearchAtDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestSearchByPositionAtDoublyLinkedList(t *testing.T) {
+func TestSearchByPositionInDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)
@@ -123,7 +123,7 @@ func TestSearchByPositionAtDoublyLinkedList(t *testing.T) {
 	}
 }
 
-func TestSumAtDoublyLinkedList(t *testing.T) {
+func TestSumOfDoublyLinkedList(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
 	doublyLinkedList.InsertNode(3)

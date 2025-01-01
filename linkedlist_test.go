@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestInsertNewNode(t *testing.T) {
+func TestInsertNodeInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 
@@ -13,7 +13,7 @@ func TestInsertNewNode(t *testing.T) {
 	}
 }
 
-func TestInsertAtFirst(t *testing.T) {
+func TestInsertAtFirstInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNodeAtFirst(3)
@@ -23,7 +23,7 @@ func TestInsertAtFirst(t *testing.T) {
 	}
 }
 
-func TestInsertAtMiddle(t *testing.T) {
+func TestInsertAtMiddleInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -34,7 +34,7 @@ func TestInsertAtMiddle(t *testing.T) {
 	}
 }
 
-func TestInsertAtPosition(t *testing.T) {
+func TestInsertAtPositionInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -46,7 +46,7 @@ func TestInsertAtPosition(t *testing.T) {
 	}
 }
 
-func TestDeleteNode(t *testing.T) {
+func TestDeleteNodeInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -59,7 +59,7 @@ func TestDeleteNode(t *testing.T) {
 	}
 }
 
-func TestDeleteAtPosition(t *testing.T) {
+func TestDeleteAtPositionInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -72,7 +72,7 @@ func TestDeleteAtPosition(t *testing.T) {
 	}
 }
 
-func TestDeleteFirst(t *testing.T) {
+func TestDeleteFirstInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -85,7 +85,7 @@ func TestDeleteFirst(t *testing.T) {
 	}
 }
 
-func TestDeleteByValue(t *testing.T) {
+func TestDeleteByValueInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -98,7 +98,7 @@ func TestDeleteByValue(t *testing.T) {
 	}
 }
 
-func TestSearch(t *testing.T) {
+func TestSearchInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -110,7 +110,7 @@ func TestSearch(t *testing.T) {
 	}
 }
 
-func TestSearchByPosition(t *testing.T) {
+func TestSearchByPositionInLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -123,7 +123,7 @@ func TestSearchByPosition(t *testing.T) {
 	}
 }
 
-func TestSum(t *testing.T) {
+func TestSumOfLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
@@ -161,7 +161,7 @@ func TestClearLinkedList(t *testing.T) {
 	}
 }
 
-func TestDeleteAtMiddle(t *testing.T) {
+func TestDeleteAtMiddleOfLinkedList(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
 	linkedList.InsertNode(3)
