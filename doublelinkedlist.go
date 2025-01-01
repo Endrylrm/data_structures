@@ -283,3 +283,25 @@ func (dll *DoublyLinkedList) ToArrayReverse() []int {
 
 	return dataList
 }
+
+func (dll *DoublyLinkedList) Traverse() {
+	curNode := dll.head
+
+	for curNode != nil {
+		fmt.Print(curNode.data, " <=> ")
+		curNode = curNode.next
+	}
+
+	fmt.Println("nil")
+}
+
+func (dll *DoublyLinkedList) TraverseReverse() {
+	curNode := dll.tail
+
+	for curNode != nil {
+		fmt.Print(curNode.data, " <=> ")
+		curNode = curNode.prev
+	}
+
+	fmt.Println("nil")
+}

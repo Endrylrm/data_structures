@@ -14,6 +14,7 @@ Currently the implementation supports the following:
 - Checking if it's a valid position O(N).
 - Transforming the data in a String or Array, both being O(N).
 - Reversing the list is O(N).
+- Traverse the list printing the contents is O(N).
 
 # Doubly Linked List
 
@@ -27,3 +28,4 @@ Currently the implementation supports the following:
 - Checking if it's a valid position O(N).
 - Transforming the data in a String or Array, both being O(N).
 - Reversing the list is O(N).
+- Traverse the list printing the contents is O(N).

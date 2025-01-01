@@ -248,3 +248,14 @@ func (ll *LinkedList) ToArray() []int {
 
 	return dataList
 }
+
+func (ll *LinkedList) Traverse() {
+	curNode := ll.head
+
+	for curNode != nil {
+		fmt.Print(curNode.data, " => ")
+		curNode = curNode.next
+	}
+
+	fmt.Println("nil")
+}
