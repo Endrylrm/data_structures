@@ -1,6 +1,7 @@
 package main
 
 import (
+	"slices"
 	"testing"
 )
 
@@ -135,6 +136,32 @@ func TestSumOfDoublyLinkedList(t *testing.T) {
 	}
 }
 
+func TestDoublyLinkedListToString(t *testing.T) {
+	doublyLinkedList := NewDoublyLinkedList()
+	doublyLinkedList.InsertNode(1)
+	doublyLinkedList.InsertNode(3)
+	doublyLinkedList.InsertNodeAtMiddle(9)
+	doublyLinkedList.InsertNodeAtPosition(1, 10)
+	str := doublyLinkedList.ToString()
+
+	if str != "1, 10, 9, 3" {
+		t.Fatalf("unable to convert the Doubly Linked List to string")
+	}
+}
+
+func TestDoublyLinkedListToStringReverse(t *testing.T) {
+	doublyLinkedList := NewDoublyLinkedList()
+	doublyLinkedList.InsertNode(1)
+	doublyLinkedList.InsertNode(3)
+	doublyLinkedList.InsertNodeAtMiddle(9)
+	doublyLinkedList.InsertNodeAtPosition(1, 10)
+	str := doublyLinkedList.ToStringReverse()
+
+	if str != "3, 9, 10, 1" {
+		t.Fatalf("unable to convert the Doubly Linked List to string reverse")
+	}
+}
+
 func TestDoublyLinkedListToArray(t *testing.T) {
 	doublyLinkedList := NewDoublyLinkedList()
 	doublyLinkedList.InsertNode(1)
@@ -142,9 +169,24 @@ func TestDoublyLinkedListToArray(t *testing.T) {
 	doublyLinkedList.InsertNodeAtMiddle(9)
 	doublyLinkedList.InsertNodeAtPosition(1, 10)
 	arr := doublyLinkedList.ToArray()
+	testArr := []int{1, 10, 9, 3}
 
-	if len(arr) != 4 {
+	if len(arr) != 4 || !slices.Equal(arr, testArr) {
 		t.Fatalf("unable to convert the Doubly Linked List to array")
+	}
+}
+
+func TestDoublyLinkedListToArrayReverse(t *testing.T) {
+	doublyLinkedList := NewDoublyLinkedList()
+	doublyLinkedList.InsertNode(1)
+	doublyLinkedList.InsertNode(3)
+	doublyLinkedList.InsertNodeAtMiddle(9)
+	doublyLinkedList.InsertNodeAtPosition(1, 10)
+	arr := doublyLinkedList.ToArrayReverse()
+	testArr := []int{3, 9, 10, 1}
+
+	if len(arr) != 4 || !slices.Equal(arr, testArr) {
+		t.Fatalf("unable to convert the Doubly Linked List to array reverse")
 	}
 }
 

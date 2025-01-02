@@ -1,6 +1,7 @@
 package main
 
 import (
+	"slices"
 	"testing"
 )
 
@@ -135,6 +136,19 @@ func TestSumOfLinkedList(t *testing.T) {
 	}
 }
 
+func TestLinkedListToString(t *testing.T) {
+	linkedList := NewLinkedList()
+	linkedList.InsertNode(1)
+	linkedList.InsertNode(3)
+	linkedList.InsertNodeAtMiddle(9)
+	linkedList.InsertNodeAtPosition(1, 10)
+	str := linkedList.ToString()
+
+	if str != "1, 10, 9, 3" {
+		t.Fatalf("unable to convert the Linked List to string")
+	}
+}
+
 func TestLinkedListToArray(t *testing.T) {
 	linkedList := NewLinkedList()
 	linkedList.InsertNode(1)
@@ -142,8 +156,9 @@ func TestLinkedListToArray(t *testing.T) {
 	linkedList.InsertNodeAtMiddle(9)
 	linkedList.InsertNodeAtPosition(1, 10)
 	arr := linkedList.ToArray()
+	testArr := []int{1, 10, 9, 3}
 
-	if len(arr) != 4 {
+	if len(arr) != 4 || !slices.Equal(arr, testArr) {
 		t.Fatalf("unable to convert the LinkedList to array")
 	}
 }
