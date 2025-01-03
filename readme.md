@@ -32,7 +32,7 @@ Currently the implementation supports the following:
 
 # Dynamic Size Stack
 
-The implementation of the Dynamic Size Stack, using a Linked List where the Top Node Points to the last pushed node.
+The implementation of the Dynamic Size Stack, using a Linked List, the Top Node Points to the last pushed node, where the last in is the first out (LIFO).
 Currently the implementation supports the following: 
 
 - Pushing new node at top position of the stack O(1).
