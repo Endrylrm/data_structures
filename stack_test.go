@@ -49,3 +49,16 @@ func TestClearTheStack(t *testing.T) {
 		t.Fatalf("unable to clear the Stack")
 	}
 }
+
+func TestReverseTheStack(t *testing.T) {
+	stack := NewStack()
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+	stack.Push(4)
+	stack.Reverse()
+
+	if stack.ToString() != "1, 2, 3, 4" {
+		t.Fatalf("unable to reverse the Stack")
+	}
+}
