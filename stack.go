@@ -55,6 +55,20 @@ func (st *Stack) Push(value int) {
 	st.size++
 }
 
+func (st *Stack) Reverse() {
+	var prevNode, nextNode *Node
+	curNode := st.top
+
+	for curNode != nil {
+		nextNode = curNode.next
+		curNode.next = prevNode
+		prevNode = curNode
+		curNode = nextNode
+	}
+
+	st.top = prevNode
+}
+
 func (st *Stack) Search(value int) bool {
 	curNode := st.top
 	distance := 0

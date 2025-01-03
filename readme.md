@@ -40,5 +40,6 @@ Currently the implementation supports the following:
 - Peek node at top position of the stack O(1).
 - Searching by value and by position, both being O(N).
 - Clearing the stack is O(N).
+- Reversing the list is O(N).
 - Transforming the data in a String or Array, both being O(N).
 - Traverse the stack printing the contents is O(N).
