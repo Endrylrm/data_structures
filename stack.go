@@ -35,6 +35,7 @@ func (st *Stack) Peek() *Node {
 
 func (st *Stack) Pop() {
 	if st.top == nil {
+		fmt.Println("The stack is empty!")
 		return
 	}
 
