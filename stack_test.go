@@ -62,3 +62,15 @@ func TestReverseTheStack(t *testing.T) {
 		t.Fatalf("unable to reverse the Stack")
 	}
 }
+
+func TestSearchStack(t *testing.T) {
+	stack := NewStack()
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+	stack.Push(4)
+
+	if !stack.Search(1) {
+		t.Fatalf("unable to reverse the Stack")
+	}
+}
