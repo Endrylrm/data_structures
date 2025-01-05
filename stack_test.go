@@ -71,6 +71,6 @@ func TestSearchStack(t *testing.T) {
 	stack.Push(4)
 
 	if !stack.Search(1) {
-		t.Fatalf("unable to reverse the Stack")
+		t.Fatalf("unable to search the Stack")
 	}
 }
