@@ -12,6 +12,10 @@ type Stack struct {
 	size int
 }
 
+func NewStack() *Stack {
+	return &Stack{nil, 0}
+}
+
 func (st *Stack) Clear() {
 	for st.top != nil {
 		temp := st.top.next
@@ -23,10 +27,6 @@ func (st *Stack) Clear() {
 
 func (st *Stack) IsEmpty() bool {
 	return st.size == 0 && st.top == nil
-}
-
-func NewStack() *Stack {
-	return &Stack{nil, 0}
 }
 
 func (st *Stack) Peek() *Node {

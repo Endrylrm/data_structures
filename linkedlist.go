@@ -17,6 +17,10 @@ type LinkedList struct {
 	size int
 }
 
+func NewLinkedList() *LinkedList {
+	return &LinkedList{nil, 0}
+}
+
 func (ll *LinkedList) CheckValidPosition(index int) bool {
 	if index > ll.size-1 {
 		fmt.Println("Out of bounds, please put a valid value")
@@ -161,10 +165,6 @@ func (ll *LinkedList) InsertNodeAtPosition(index int, value int) {
 		newNode.next = curNode
 		ll.size++
 	}
-}
-
-func NewLinkedList() *LinkedList {
-	return &LinkedList{nil, 0}
 }
 
 func (ll *LinkedList) Reverse() {

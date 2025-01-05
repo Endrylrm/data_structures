@@ -19,6 +19,10 @@ type DoublyLinkedList struct {
 	size int
 }
 
+func NewDoublyLinkedList() *DoublyLinkedList {
+	return &DoublyLinkedList{nil, nil, 0}
+}
+
 func (dll *DoublyLinkedList) CheckValidPosition(index int) bool {
 	if index > dll.size-1 {
 		fmt.Println("Out of bounds, please put a valid value")
@@ -171,10 +175,6 @@ func (dll *DoublyLinkedList) InsertNodeAtPosition(index int, value int) {
 		curNode.prev = newNode
 		dll.size++
 	}
-}
-
-func NewDoublyLinkedList() *DoublyLinkedList {
-	return &DoublyLinkedList{nil, nil, 0}
 }
 
 func (dll *DoublyLinkedList) Reverse() {
