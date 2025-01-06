@@ -32,7 +32,7 @@ Currently the implementation supports the following:
 
 # Dynamic Size Stack
 
-The implementation of the Dynamic Size Stack, using a Linked List, the Top Node Points to the last pushed node, where the last in is the first out (LIFO).
+The implementation of the Dynamic Size Stack, using a Singly Linked List, the Top Node Points to the last pushed node, where the last in is the first out (LIFO).
 Currently the implementation supports the following: 
 
 - Pushing new node at top position of the stack O(1).
@@ -40,6 +40,19 @@ Currently the implementation supports the following:
 - Peek node at top position of the stack O(1).
 - Searching by value and by position, both being O(N).
 - Clearing the stack is O(N).
-- Reversing the list is O(N).
+- Reversing the stack is O(N).
 - Transforming the data in a String or Array, both being O(N).
 - Traverse the stack printing the contents is O(N).
+
+# Queue
+
+The implementation of a Queue, using a Singly Linked List, the Top Node Points to the last pushed node, where the First in is the first out (FIFO).
+Currently the implementation supports the following: 
+
+- Enqueue node at rear position of the queue O(1).
+- Dequeue node at front position of the queue O(1).
+- Searching by value and by position, both being O(N).
+- Clearing the queue is O(N).
+- Reversing the list is O(N).
+- Transforming the data in a String or Array, both being O(N).
+- Traverse the queue printing the contents is O(N).

@@ -51,6 +51,17 @@ func (queue *Queue) Enqueue(value int) {
 	queue.size++
 }
 
+func (queue *Queue) Clear() {
+	for queue.front != nil {
+		temp := queue.front.next
+		queue.front = nil
+		queue.front = temp
+		queue.size--
+	}
+
+	queue.rear = nil
+}
+
 func (queue *Queue) Front() *Node {
 	return queue.front
 }
