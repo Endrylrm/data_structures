@@ -1,6 +1,6 @@
 # Data Structures
 
-This repository contains my learning of Data Structures. Currently, it only have the implementation of a Linked List (Singly and Doubly) and a Dynamic Size Stack.
+This repository contains my learning of Data Structures. Currently, it only have the implementation of a Linked List (Singly and Doubly), Dynamic Size Stack and a Queue.
 
 # Singly Linked List
 
