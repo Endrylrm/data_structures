@@ -70,6 +70,10 @@ func (queue *Queue) Rear() *Node {
 	return queue.rear
 }
 
+func (queue *Queue) Capacity() int {
+	return queue.capacity
+}
+
 func (queue *Queue) Size() int {
 	return queue.size
 }

@@ -21,6 +21,14 @@ func NewLinkedList() *LinkedList {
 	return &LinkedList{nil, 0}
 }
 
+func (ll *LinkedList) Head() *Node {
+	return ll.head
+}
+
+func (ll *LinkedList) Size() int {
+	return ll.size
+}
+
 func (ll *LinkedList) CheckValidPosition(index int) bool {
 	if index > ll.size-1 {
 		fmt.Println("Out of bounds, please put a valid value")

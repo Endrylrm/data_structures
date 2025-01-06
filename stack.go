@@ -16,6 +16,10 @@ func NewStack() *Stack {
 	return &Stack{nil, 0}
 }
 
+func (st *Stack) Size() int {
+	return st.size
+}
+
 func (st *Stack) Clear() {
 	for st.top != nil {
 		temp := st.top.next

@@ -23,6 +23,18 @@ func NewDoublyLinkedList() *DoublyLinkedList {
 	return &DoublyLinkedList{nil, nil, 0}
 }
 
+func (dll *DoublyLinkedList) Head() *DoublyNode {
+	return dll.head
+}
+
+func (dll *DoublyLinkedList) Tail() *DoublyNode {
+	return dll.tail
+}
+
+func (dll *DoublyLinkedList) Size() int {
+	return dll.size
+}
+
 func (dll *DoublyLinkedList) CheckValidPosition(index int) bool {
 	if index > dll.size-1 {
 		fmt.Println("Out of bounds, please put a valid value")
