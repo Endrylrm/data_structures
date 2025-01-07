@@ -54,9 +54,8 @@ func (dll *DoublyLinkedList) Clear() {
 		dll.head = temp
 		dll.size--
 	}
-	if dll.size == 0 {
-		dll.tail = nil
-	}
+
+	dll.tail = nil
 }
 
 func (dll *DoublyLinkedList) DeleteFirstNode() {
