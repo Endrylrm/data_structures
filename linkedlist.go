@@ -29,6 +29,10 @@ func (ll *LinkedList) Size() int {
 	return ll.size
 }
 
+func (ll *LinkedList) IsEmpty() bool {
+	return ll.size == 0 && ll.head == nil
+}
+
 func (ll *LinkedList) CheckValidPosition(index int) bool {
 	if index > ll.size-1 {
 		fmt.Println("Out of bounds, please put a valid value")
@@ -47,6 +51,11 @@ func (ll *LinkedList) Clear() {
 }
 
 func (ll *LinkedList) DeleteFirstNode() {
+	if ll.IsEmpty() {
+		fmt.Println("Linked List is Empty, unable to delete.")
+		return
+	}
+
 	ll.head = ll.head.next
 	ll.size--
 }

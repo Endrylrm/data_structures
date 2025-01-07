@@ -35,6 +35,10 @@ func (dll *DoublyLinkedList) Size() int {
 	return dll.size
 }
 
+func (dll *DoublyLinkedList) IsEmpty() bool {
+	return dll.size == 0 && dll.head == nil && dll.tail == nil
+}
+
 func (dll *DoublyLinkedList) CheckValidPosition(index int) bool {
 	if index > dll.size-1 {
 		fmt.Println("Out of bounds, please put a valid value")
@@ -56,6 +60,11 @@ func (dll *DoublyLinkedList) Clear() {
 }
 
 func (dll *DoublyLinkedList) DeleteFirstNode() {
+	if dll.IsEmpty() {
+		fmt.Println("Linked List is Empty, unable to delete.")
+		return
+	}
+
 	dll.head = dll.head.next
 	dll.head.prev = nil
 
