@@ -19,7 +19,7 @@ func NewQueue(capacity int) *Queue {
 }
 
 func (queue *Queue) Dequeue() {
-	if queue.front == nil {
+	if queue.IsEmpty() {
 		fmt.Println("No nodes to Dequeue!")
 		return
 	}
@@ -34,7 +34,7 @@ func (queue *Queue) Dequeue() {
 }
 
 func (queue *Queue) Enqueue(value int) {
-	if queue.size == queue.capacity {
+	if queue.IsFull() {
 		fmt.Println("Queue is full!")
 		return
 	}
