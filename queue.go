@@ -80,7 +80,7 @@ func (queue *Queue) Size() int {
 }
 
 func (queue *Queue) IsEmpty() bool {
-	return queue.size == 0
+	return queue.size == 0 && queue.front == nil && queue.rear == nil
 }
 
 func (queue *Queue) IsFull() bool {
