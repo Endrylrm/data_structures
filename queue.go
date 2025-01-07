@@ -24,11 +24,12 @@ func (queue *Queue) Dequeue() {
 		return
 	}
 
-	if queue.front.next == nil {
+	queue.front = queue.front.next
+
+	if queue.front == nil {
 		queue.rear = nil
 	}
 
-	queue.front = queue.front.next
 	queue.size--
 }
 
